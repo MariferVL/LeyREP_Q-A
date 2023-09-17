@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #007acc;
+}
+
+button {
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005faa;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+/* Tablet Media Queries */
+@media screen and (min-width: 768px) {
+}
+
+/* Desktop/Laptop Media Queries */
+@media screen and (min-width: 1024px) {
+}
+
+
