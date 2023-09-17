@@ -1,0 +1,33 @@
+{
+  "name": "leyrep-website",
+  "version": "1.0.0",
+  "description": "Sitio web sobre la Ley REP en Chile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariferVL/LeyREP_Q-A.git"
+  },
+  "keywords": [
+    "Ley",
+    "REP",
+    "reciclaje",
+    "Chile",
+    "chatbot",
+    "flowise",
+    "js",
+    "node"
+  ],
+  "author": "María-Fernanda Villalobos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MariferVL/LeyREP_Q-A/issues"
+  },
+  "homepage": "https://github.com/MariferVL/LeyREP_Q-A#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
