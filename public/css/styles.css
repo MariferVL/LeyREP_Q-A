@@ -1,5 +1,5 @@
 body {
-    background-image: url('../images/bg_image.png'); 
+    background-image: url('../images/bg_image.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -30,6 +30,7 @@ header {
     z-index: 1000;
 }
 
+
 .navbar-left {
     display: flex;
     align-items: center;
@@ -37,7 +38,7 @@ header {
 
 .navbar-left img {
     max-width: 2.2rem;
-    margin-right: 1rem;
+    margin-right: 0.3rem;
 }
 
 .navbar-left span {
@@ -49,8 +50,9 @@ header {
 .navbar-right a {
     color: #fff;
     text-decoration: none;
-    margin-right: 1.3rem;
     font-weight: bold;
+    font-size: 0.8rem;
+    margin-right: 0.8rem;
 }
 
 main {
@@ -71,9 +73,16 @@ h2 {
     margin-bottom: 1.3rem;
 }
 
+
+.intro-video>div:nth-child(2)>iframe:nth-child(1) {
+    width: 100%;
+    height: 17rem;
+}
+
+
 .video-container iframe {
-    width: 100%; 
-    height: 17rem; 
+    width: 100%;
+    height: 28rem;
 }
 
 .gallery {
@@ -101,7 +110,7 @@ h2 {
     background-color: #f4dc28;
     color: #fff;
     font-weight: bolder;
-    margin-top: auto; 
+    margin-top: auto;
     padding: 1rem 1.3rem;
     border: none;
     cursor: pointer;
@@ -133,6 +142,21 @@ footer {
         font-size: 1.3rem;
     }
 
+    .navbar {
+        padding: 1rem 3rem;
+    }
+
+
+    .navbar-left img {
+        margin-right: 1rem;
+    }
+
+    .navbar-right a {
+        font-size: 1.3rem;
+        font-size: 1.3rem;
+
+    }
+
     section {
         padding: 3rem;
     }
@@ -153,16 +177,16 @@ footer {
         margin: 1rem 2rem 2rem;
 
     }
-  
+
 
     .gallery {
         flex-direction: row;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 
     .gallery-item {
-        flex: 1; 
-        margin: 0.5rem; 
+        flex: 1;
+        margin: 0.5rem;
     }
 
 }
@@ -171,10 +195,6 @@ footer {
 @media screen and (min-width: 1024px) {
     header {
         padding: 2.9rem;
-    }
-
-    nav {
-        padding: 1.3rem 2.9rem;
     }
 
     #video h2,
