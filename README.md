@@ -62,7 +62,7 @@ Access project files using the link bellow:
 
 Visit the ReciclaChile website, which is live and accessible at the following link:
 
-[ReciclaChile Website](https://www.reciclachile.web.app)
+[ReciclaChile Website](https://reciclachile.web.app/)
 
 ## Contributing
 
@@ -70,4 +70,4 @@ We welcome contributions from the community.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the MIT License.
