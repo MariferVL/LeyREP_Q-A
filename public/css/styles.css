@@ -1,31 +1,32 @@
 body {
+    background-image: url('../images/bg_image.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
     font-family: Arial, sans-serif;
-    background-color: #5bbf72; /* Verde */
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: rgba(0, 122, 204, 0.9); /* Azul */
+    background-color: transparent;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    transition: background-color 0.3s ease-in-out;
+    padding: 1.3rem;
 }
 
 .navbar {
+    background-color: rgba(0, 122, 204, 0.9);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-    padding: 10px 20px;
+    padding: 1rem 1.3rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    transition: background-color 0.3s ease-in-out;
 }
 
 .navbar-left {
@@ -34,12 +35,12 @@ header {
 }
 
 .navbar-left img {
-    max-width: 40px;
-    margin-right: 10px;
+    max-width: 2.2rem;
+    margin-right: 1rem;
 }
 
 .navbar-left span {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #fff;
 }
@@ -47,92 +48,96 @@ header {
 .navbar-right a {
     color: #fff;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 1.3rem;
     font-weight: bold;
 }
 
 main {
-    padding: 20px;
+    padding: 1.3rem;
 }
 
 section {
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 20px;
+    margin-bottom: 1rem;
+    background-color: #ffffffa4;
+    padding: 3rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 h1,
 h2 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #007acc; /* Azul */
+    color: #089406;
+    margin-bottom: 1.3rem;
 }
 
-button {
-    background-color: #007acc; /* Azul */
+.gallery-item span {
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color: rgb(0, 122, 204);
+}
+
+.gallery-item a {
+    background-color: #f4dc28;
     color: #fff;
-    padding: 10px 20px;
+    margin-top: 1rem;
+    padding: 1rem 1.3rem;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #005faa; /* Azul más oscuro */
+.gallery-item a:hover {
+    background-color: #37a21f;
 }
 
 footer {
     text-align: center;
-    background-color: rgba(0, 122, 204, 0.9); /* Azul */
+    background-color: rgba(0, 122, 204, 0.9);
     color: #fff;
-    padding: 10px 0;
+    padding: 1rem 0;
 }
 
 /* Tablet Media Queries */
 @media screen and (min-width: 768px) {
     nav a {
-        font-size: 18px;
+        font-size: 1.3rem;
     }
 
-    /* Cambiar la disposición de intro-content para tablet */
     #intro .intro-content {
         display: flex;
         flex-direction: row;
     }
 
-    /* Alinear el texto a la izquierda en tablets */
     #intro .intro-text {
         flex: 1;
-        text-align: left;
-        margin-right: 20px;
+        text-align: justify;
+        margin: 6rem 4rem 4rem;
     }
 
-    /* Alinear el video a la derecha en tablets */
     #intro .intro-video {
         flex: 1;
-        text-align: right;
-        margin-left: 20px;
+        text-align: left;
+        margin-left: 1.3rem;
     }
 }
 
 /* Desktop/Laptop Media Queries */
 @media screen and (min-width: 1024px) {
     header {
-        padding: 40px;
+        padding: 2.9rem;
     }
 
     nav {
-        padding: 20px 40px;
+        padding: 1.3rem 2.9rem;
     }
 
-    /* Centrar el título y el video en la sección de video */
     #video h2,
     #video .video-container {
         text-align: center;
     }
 
-    /* Reducir tamaño de título y video en pantallas más pequeñas */
     #video h2 {
-        font-size: 24px;
+        font-size: 2rem;
     }
 
     #video .video-container {
@@ -140,27 +145,24 @@ footer {
         margin: 0 auto;
     }
 
-    /* Estilo de la sección de enlaces */
     #links {
         text-align: center;
     }
 
     #links h2 {
-        font-size: 24px;
+        font-size: 1.8rem;
     }
 
-    /* Cambiar la disposición de la galería de enlaces para pantallas más grandes */
     .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
+        gap: 1.3rem;
         text-align: center;
     }
 
-    /* Estilo de cada ítem de la galería de enlaces */
     .gallery-item {
         background-color: #fff;
-        padding: 20px;
+        padding: 1.3rem;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
@@ -172,9 +174,4 @@ footer {
         height: auto;
     }
 
-    .gallery-item a {
-        color: #007acc;
-        text-decoration: none;
-        margin-top: 10px;
-    }
 }
