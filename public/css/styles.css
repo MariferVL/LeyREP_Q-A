@@ -70,6 +70,10 @@ h2 {
     margin-bottom: 1.3rem;
 }
 
+.gallery-item {
+    position: relative;
+}
+
 .gallery-item span {
     font-weight: bolder;
     margin-bottom: 1rem;
@@ -79,11 +83,14 @@ h2 {
 .gallery-item a {
     background-color: #f4dc28;
     color: #fff;
+    font-weight: bolder;
     margin-top: 1rem;
     padding: 1rem 1.3rem;
     border: none;
     cursor: pointer;
     text-decoration: none;
+    position: absolute;
+    bottom: 0%;
 }
 
 .gallery-item a:hover {
