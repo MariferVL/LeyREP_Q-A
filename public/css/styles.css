@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5bbf72; /* Verde */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 122, 204, 0.9); /* Azul */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.navbar-left span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #007acc; /* Azul */
+}
+
+button {
+    background-color: #007acc; /* Azul */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005faa; /* Azul más oscuro */
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 122, 204, 0.9); /* Azul */
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Tablet Media Queries */
+@media screen and (min-width: 768px) {
+    nav a {
+        font-size: 18px;
+    }
+
+    /* Cambiar la disposición de intro-content para tablet */
+    #intro .intro-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Alinear el texto a la izquierda en tablets */
+    #intro .intro-text {
+        flex: 1;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    /* Alinear el video a la derecha en tablets */
+    #intro .intro-video {
+        flex: 1;
+        text-align: right;
+        margin-left: 20px;
+    }
+}
+
+/* Desktop/Laptop Media Queries */
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 40px;
+    }
+
+    nav {
+        padding: 20px 40px;
+    }
+
+    /* Centrar el título y el video en la sección de video */
+    #video h2,
+    #video .video-container {
+        text-align: center;
+    }
+
+    /* Reducir tamaño de título y video en pantallas más pequeñas */
+    #video h2 {
+        font-size: 24px;
+    }
+
+    #video .video-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Estilo de la sección de enlaces */
+    #links {
+        text-align: center;
+    }
+
+    #links h2 {
+        font-size: 24px;
+    }
+
+    /* Cambiar la disposición de la galería de enlaces para pantallas más grandes */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        text-align: center;
+    }
+
+    /* Estilo de cada ítem de la galería de enlaces */
+    .gallery-item {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .gallery-item a {
+        color: #007acc;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+}

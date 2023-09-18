@@ -1,52 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitio web sobre la Ley REP en Chile">
-    <title>Ley REP Chile</title>
-    
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Sitio web sobre la Ley REP en Chile y el reciclaje con un chatbot de consulta.">
+    <title>Recicla Chile</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <meta name="keywords" content="Ley REP, reciclaje, Chile">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" type="image/x-icon">
+    <meta property="og:title" content="Recicla Chile">
+    <meta property="og:description"
+        content="Sitio web sobre la Ley REP en Chile y el reciclaje con un chatbot de consulta.">
+    <meta property="og:image" content="URL_DE_TU_IMAGEN">
+    <meta property="og:url" content="https://reciclachile.web.app/">
 
+    <!-- Twitter Card para compartir en Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recicla Chile">
+    <meta name="twitter:description"
+        content="Sitio web sobre la Ley REP en Chile y el reciclaje con un chatbot de consulta.">
+    <meta name="twitter:image" content="URL_DE_TU_IMAGEN">
 </head>
+
 <body>
     <header>
-        <h1>Sitio web sobre la Ley REP en Chile</h1>
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="images/logo.png" alt="Logo Ley REP">
+                <span>Ley REP</span>
+            </div>
+            <nav class="navbar-right">
+                <a href="#">Inicio</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="intro">
-            <h2>Introducción a la Ley REP</h2>
-            <p>La Ley REP busca...</p>
+            <div class="intro-content">
+                <div class="intro-video">
+                    <h2>Ley REP en 3 minutos</h2>
+                    <div class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/Qg07WU5CsV8?si=O2h-n94OpxDFe9SX"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="intro-text">
+                    <h2>Introducción a la Ley REP</h2>
+                    <p>La Ley 20920 busca promover la recolección y valorización de residuos, así
+                        como la reducción de su impacto ambiental. Además, establece obligaciones para los productores
+                        de
+                        bienes, quienes deben hacerse responsables de la gestión de los residuos generados por sus
+                        productos.
+                        Con esta ley, se busca fomentar la cultura del reciclaje y contribuir a la protección del medio
+                        ambiente
+                        en el país.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="videos">
-            <h2>Ley REP en 3 minutos</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Qg07WU5CsV8?si=O2h-n94OpxDFe9SX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </section>
-
-        <section>
+        <section id="video">
             <h2>¡Reciclar es la Cumbia!</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lD8y7ESV0_A?si=5UN0Q5LERLqDsACz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <section id="chatbot">
-            <button id="chatbotButton">Chatbot</button>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lD8y7ESV0_A?si=5UN0Q5LERLqDsACz"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </section>
 
         <section id="links">
             <h2>Enlaces de Interés</h2>
-            <ul>
-                <li><a href="URL_DEL_ENLACE_1" target="_blank">Enlace 1</a></li>
-                <li><a href="URL_DEL_ENLACE_2" target="_blank">Enlace 2</a></li>
+            <ul class="gallery">
+                <li class="gallery-item">
+                    <a href="https://leyrep.cl/" target="_blank">
+                        <img src="images/leyrep.png" alt="Imagen Sitio web oficial Ley REP">
+                        <span>Sitio web oficial Ley REP</span>
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="https://economiacircular.mma.gob.cl/ley-rep/#:~:text=%C2%BFQue%20actores%20establece%20la%20ley%3F"
+                        target="_blank">
+                        <img src="images/actores.png" alt="Imagen sitio web de Actores de la REP">
+                        <span>Actores de la REP</span>
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="https://fondos.mma.gob.cl/fondo-para-el-reciclaje-2024/" target="_blank">
+                        <img src="images/fondo.png" alt="Imagen sitio web de Fondo para el Reciclaje">
+                        <span>Fondo para el Reciclaje 2024</span>
+                    </a>
+                </li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Ley REP Chile</p>
+        <p>&copy; 2023 Ley REP. Todos los derechos reservados.</p>
     </footer>
 
-
-    <script src="../index.js"></script>
+    <script src="../src/index.js"></script>
+    <script src="../src/firebase.js"></script>
 </body>
+
 </html>
