@@ -1,7 +1,7 @@
 {
   "name": "leyrep-website",
   "version": "1.0.0",
-  "description": "Sitio web sobre la Ley REP en Chile",
+  "description": "Sitio web no oficial sobre la Ley REP en Chile",
   "main": "index.js",
   "scripts": {
     "test": "jest",
