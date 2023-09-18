@@ -72,7 +72,7 @@ h2 {
 
 .video-container iframe {
     width: 100%; 
-    height: auto; 
+    height: 17rem; 
 }
 
 .gallery-item {
@@ -131,6 +131,7 @@ footer {
         text-align: left;
         margin-left: 1.3rem;
     }
+
 }
 
 /* Desktop/Laptop Media Queries */
@@ -156,6 +157,7 @@ footer {
         max-width: 800px;
         margin: 0 auto;
     }
+
 
     #links {
         text-align: center;
