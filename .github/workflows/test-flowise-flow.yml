@@ -32,7 +32,14 @@ jobs:
         run: npm install
 
       - name: main
-        run: npx flowise start &
-          wait-on tcp:3000 &&
-          OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} npm run load &&
-          npm test
+        run: |
+              export PORT=$PORT
+              export OPENAI_API_KEY=$OPENAI_API_KEY
+              npx flowise start &
+              wait-on tcp:3000 &&
+              npm run load &&
+              npm test
+        env:
+          PORT: ${{ secrets.PORT }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
