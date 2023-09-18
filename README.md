@@ -61,8 +61,7 @@ Access project files using the link bellow:
 ## Deployment
 
 Visit the ReciclaChile website, which is live and accessible at the following link:
-
-[ReciclaChile Website](https://reciclachile.web.app/)
+[ReciclaChile Website](https://reciclachile.web.app)
 
 ## Contributing
 
