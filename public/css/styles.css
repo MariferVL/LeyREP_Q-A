@@ -249,13 +249,15 @@ section {
 }
 
 .user-message {
-    background-color: #69950adb;
+    background-color: #76a70ddb;
     align-self: flex-end;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bot-message {
     background-color: #f7f8ff;
-    color: #303235;
+    color: #4f7106;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 #input-container {
