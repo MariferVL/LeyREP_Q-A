@@ -7,11 +7,11 @@
     <meta name="description" content="Sitio web sobre la Ley REP en Chile y el reciclaje con un chatbot de consulta.">
     <title>Recicla Chile</title>
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
     <meta name="keywords" content="Ley REP, reciclaje, Chile">
     <link rel="icon" href="images/favicon/favicon-32x32.png" type="image/x-icon">
-   
+
     <meta property="og:title" content="Recicla Chile">
     <meta property="og:description"
         content="Sitio web sobre la Ley REP en Chile y el reciclaje con un chatbot de consulta.">
@@ -28,6 +28,21 @@
 </head>
 
 <body>
+    <button id="chat-button">Chat</button>
+
+    <div id="chat-container" style="display: none;">
+        <div id="chat-header">
+            Chatbot
+        </div>
+        <div id="chat-messages">
+            <!-- Aquí se mostrarán los mensajes -->
+        </div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Type your question">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
     <header>
         <div class="navbar">
             <div class="navbar-left">
@@ -106,7 +121,9 @@
         <p>&copy; 2023 Recicla Chile. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="../src/firebase.js"></script>
+    <script src="/src/firebase.js"></script>
+    <script src="/src/index.js"></script>
+    <script src="/src/chatbot.js"></script>
 </body>
 
 </html>
