@@ -5,21 +5,21 @@ body {
     background-attachment: scroll;
     font-family: Arial, sans-serif;
     text-align: justify;
-    color: #333;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
+/* Header */
 
 header {
     background-color: transparent;
-    color: #fff;
     text-align: center;
     padding: 1.3rem;
 }
 
 .navbar {
-    background-color: rgba(0, 122, 204, 0.9);
+    background-color: rgba(2, 2, 2, 0.9);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,51 +43,115 @@ header {
 }
 
 .navbar-left span {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: #fff;
 }
 
 .navbar-right a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.8rem;
-    margin-right: 0.8rem;
+    margin-right: 0.3rem;
+    transition: color 0.3s;
 }
 
-main {
-    padding: 1.3rem;
+.navbar-right a:hover {
+    color: #bbfe2b;
 }
+
+.navbar-right a:active {
+    color: #4f7106;
+}
+
 
 section {
-    margin-bottom: 1rem;
-    background-color: #ffffffa4;
     padding: 1.3rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-h1,
-h2 {
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 2.2rem;
+}
+
+.hero-content {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.main-tl {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #333333;
+}
+
+.highlight-tl {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: aqua;
+    background-color: #fff;
+    padding: 0 0.3rem;
+}
+
+.question-tl {
+    font-family: 'Caprasimo', cursive;
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    width: fit-content;
+    margin: auto;
+}
+
+
+/* Intro Section */
+
+#intro h2,
+#video h2,
+#links h2 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #089406;
-    margin-bottom: 1.3rem;
+    font-size: 1.8rem;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.23);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    margin: 0.3rem 0;
+    width: inherit;
+    padding-left: 0.8rem;
+    background-color: #0000009c;
 }
-
 
 .video-container iframe {
     width: 100%;
     height: auto;
 }
 
+
+.intro-text>p:nth-child(1) {
+    padding: 2rem;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Links Section */
+
 .gallery {
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin-top: 0px;
 }
 
+
 .gallery-item {
-    background-color: #ffffffa4;
     margin-bottom: 1rem;
     padding: 1.3rem;
     display: flex;
@@ -96,14 +160,17 @@ h2 {
 }
 
 .gallery-item span {
+    font-size: 1rem;
     font-weight: bolder;
     margin-bottom: 1rem;
-    color: rgb(0, 122, 204);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: left;
 }
 
+
 .gallery-item a {
-    background-color: #f4dc28;
-    color: #fff;
+    background-color: #F2B705;
+    color: #ffffff;
     font-weight: bolder;
     margin-top: auto;
     padding: 1rem 1.3rem;
@@ -113,7 +180,7 @@ h2 {
 }
 
 .gallery-item a:hover {
-    background-color: #37a21f;
+    background-color: #4f7106;
 }
 
 .gallery-item img {
@@ -125,8 +192,7 @@ h2 {
 /* Chatbot */
 
 #chat-button {
-    background-color: #37a21f;
-    color: #ffffff;
+    background-color: #4f7106;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -134,7 +200,9 @@ h2 {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 9999;
     cursor: pointer;
+    color: white;
     font-size: 1.33rem;
 }
 
@@ -146,24 +214,24 @@ h2 {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     position: fixed;
-    bottom: 3.3rem; 
-    right: 1.3rem; 
+    bottom: 3.3rem;
+    right: 0.3rem;
+    z-index: 9999;
     justify-content: space-between;
 }
 
 
 #chat-header {
-    background-color: #37a21f;
+    background-color: #4f7106;
     font-weight: bold;
-    color: #ffffff;
     padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .emoji {
-    font-size: 1.3rem; 
-    margin-right: 0.3rem; 
+    font-size: 1.3rem;
+    margin-right: 0.3rem;
 
 }
 
@@ -181,8 +249,7 @@ h2 {
 }
 
 .user-message {
-    background-color: #37a21f;
-    color: #ffffff;
+    background-color: #69950adb;
     align-self: flex-end;
 }
 
@@ -195,9 +262,17 @@ h2 {
     display: flex;
     padding: 0.8rem;
     height: 2rem;
-  }
-  
-  
+}
+
+#user-input:focus {
+    outline: 2px solid #4f7106;
+    border-color: #86be0edb;
+}
+
+#user-input::placeholder {
+    color: #4f7106;
+}
+
 #user-input {
     flex-grow: 1;
     padding: 11px;
@@ -206,8 +281,9 @@ h2 {
 }
 
 #send-button {
-    background-color: #37a21f;
-    color: #ffffff;
+    background-color: #4f7106;
+    color: #fff;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -218,8 +294,7 @@ h2 {
 
 footer {
     text-align: center;
-    background-color: rgba(0, 122, 204, 0.9);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 1rem 0;
 }
 
@@ -241,13 +316,20 @@ footer {
 
     .navbar-right a {
         font-size: 1.3rem;
-        font-size: 1.3rem;
-
     }
 
     section {
         padding: 1rem 3rem 3rem;
     }
+
+    #intro h2,
+    #video h2,
+    #links h2 {
+        font-size: 1.8rem;
+        padding-left: 2.8rem;
+        margin: auto;
+    }
+
 
     #intro .intro-content {
         display: flex;
@@ -298,10 +380,49 @@ footer {
         padding: 1rem 5rem;
     }
 
-    section {
-        padding: 3rem;
+
+    .navbar-left span {
+        font-size: 1.3rem;
     }
 
+    .navbar-right a {
+        margin-right: 0.8rem;
+    }
+
+
+    section {
+        padding: 3rem 0;
+        margin: 4rem 0;
+    }
+
+
+
+    #chat-container {
+        right: 1.3rem;
+    }
+
+
+
+    #intro h2,
+    #video h2,
+    #links h2 {
+        font-size: 2rem;
+        padding: 1rem 0 1rem 2.8rem;
+        margin: auto;
+    }
+
+    .main-tl {
+        font-size: 3.3rem;
+    }
+
+    .highlight-tl {
+        font-size: 4rem;
+    }
+
+    .question-tl {
+        font-size: 3rem;
+        padding: 1.1rem;
+    }
 
     #intro .intro-video {
         margin: 1rem 2rem 2rem;
@@ -311,18 +432,21 @@ footer {
         margin: 7rem 2rem;
     }
 
+    .intro-text>p:nth-child(1) {
+        padding: 0 5rem 0 2rem;
+        font-size: 1.3rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
     #video h2,
     #video .video-container {
         text-align: center;
     }
 
-    #video h2 {
-        font-size: 2rem;
-    }
 
     #video .video-container {
         max-width: 800px;
-        margin: 0 auto;
+        margin: 1rem auto;
     }
 
     .video-container iframe {
@@ -330,12 +454,21 @@ footer {
         height: 28rem;
     }
 
+    .gallery-item span {
+        font-size: 1.3rem;
+
+    }
+
     #links {
         text-align: center;
     }
 
-    #links h2 {
-        font-size: 1.8rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .blur {
+        filter: blur(5px);
     }
 
 }
