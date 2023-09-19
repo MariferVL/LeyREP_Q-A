@@ -2,10 +2,10 @@
   "name": "leyrep-website",
   "version": "1.0.0",
   "description": "Sitio web no oficial sobre la Ley REP en Chile",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node src/index.js",
+    "start": "node server.js",
     "load": "node scripts/load_flow.js"
   },
   "repository": {
