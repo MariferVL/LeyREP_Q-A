@@ -135,27 +135,42 @@ h2 {
     bottom: 20px;
     right: 20px;
     cursor: pointer;
+    font-size: 1.33rem;
 }
 
 #chat-container {
-    width: 400px;
+    width: 22rem;
+    height: 29rem;
     margin: 20px auto;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 3.3rem; 
+    right: 1.3rem; 
+    justify-content: space-between;
 }
+
 
 #chat-header {
     background-color: #37a21f;
+    font-weight: bold;
     color: #ffffff;
     padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
+.emoji {
+    font-size: 1.3rem; 
+    margin-right: 0.3rem; 
+
+}
+
+
 #chat-messages {
     padding: 10px;
-    max-height: 400px;
+    height: 21.1rem;
     overflow-y: auto;
 }
 
@@ -178,12 +193,14 @@ h2 {
 
 #input-container {
     display: flex;
-    padding: 10px;
-}
-
+    padding: 0.8rem;
+    height: 2rem;
+  }
+  
+  
 #user-input {
     flex-grow: 1;
-    padding: 5px;
+    padding: 11px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }

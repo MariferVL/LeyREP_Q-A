@@ -7,6 +7,8 @@
     <meta name="description" content="Sitio web sobre la Ley REP en Chile y el reciclaje con un chatbot de consulta.">
     <title>Recicla Chile</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
     <meta name="keywords" content="Ley REP, reciclaje, Chile">
@@ -29,18 +31,19 @@
 </head>
 
 <body>
-    <button id="chat-button">Chat</button>
+    <button id="chat-button"><i class="fas fa-comment"></i>
+    </button>
 
     <div id="chat-container" style="display: none;">
         <div id="chat-header">
-            Chatbot
+            <span class="emoji">👩🏻‍🦱🌻</span>Verdia
         </div>
         <div id="chat-messages">
             <!-- Aquí se mostrarán los mensajes -->
         </div>
         <div id="input-container">
-            <input type="text" id="user-input" placeholder="Type your question">
-            <button id="send-button">Send</button>
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta">
+            <button id="send-button">Enviar</button>
         </div>
     </div>
 

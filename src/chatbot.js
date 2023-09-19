@@ -27,14 +27,17 @@ sendButton.addEventListener('click', () => {
     }
 });
 
-
 const chatContainer = document.getElementById('chat-container');
 const chatButton = document.getElementById('chat-button');
 
 chatButton.addEventListener('click', () => {
     if (chatContainer.style.display === 'none') {
         chatContainer.style.display = 'block';
+        chatButton.innerHTML = '<i class="fas fa-times"></i>';
+
     } else {
         chatContainer.style.display = 'none';
+        chatButton.innerHTML = '<i class="fas fa-comment"></i>';
+        
     }
 });
