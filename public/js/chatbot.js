@@ -29,15 +29,18 @@ sendButton.addEventListener('click', () => {
 
 const chatContainer = document.getElementById('chat-container');
 const chatButton = document.getElementById('chat-button');
+const webContainer = document.getElementById('web-container');
 
 chatButton.addEventListener('click', () => {
     if (chatContainer.style.display === 'none') {
         chatContainer.style.display = 'block';
         chatButton.innerHTML = '<i class="fas fa-times"></i>';
+        webContainer.classList.add('blur');
 
     } else {
         chatContainer.style.display = 'none';
         chatButton.innerHTML = '<i class="fas fa-comment"></i>';
+        webContainer.classList.remove('blur');
         
     }
 });
