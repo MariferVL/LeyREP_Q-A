@@ -18,15 +18,6 @@ function addBotMessage(message) {
     chatMessages.appendChild(messageDiv);
 }
 
-// sendButton.addEventListener('click', () => {
-//     const userMessage = userInput.value;
-//     if (userMessage.trim() !== '') {
-//         addUserMessage(userMessage);
-//         // Aquí puedes agregar lógica para responder como un bot
-//         // Por ejemplo: addBotMessage("Respuesta del bot...");
-//         userInput.value = '';
-//     }
-// });
 
 const chatContainer = document.getElementById('chat-container');
 const chatButton = document.getElementById('chat-button');
@@ -58,8 +49,7 @@ sendButton.addEventListener("click", async (e) => {
   const userMessage = userInput.value;
   if (userMessage.trim() !== '') {
       addUserMessage(userMessage);
-      // Aquí puedes agregar lógica para responder como un bot
-      // Por ejemplo: addBotMessage("Respuesta del bot...");
+
       userInput.value = '';
   }
 
