@@ -46,6 +46,7 @@ Explore the ReciclaChile website to access information about the REP Law, its im
 
 <div align="center">
   
+https://github.com/MariferVL/LeyREP_Q-A/assets/99364311/e76c1c45-9e64-4b83-9c2f-ffde8410c54a
 </div>
 
 Click the image above to watch a demo of the ReciclaChile project.
@@ -54,7 +55,7 @@ Click the image above to watch a demo of the ReciclaChile project.
 
 Access project files using the link bellow:
 
-- [Link to File 1](https://github.com/MariferVL/LeyREP_Q-A)
+- [Docs](https://github.com/MariferVL/LeyREP_Q-A)
 
 
 
