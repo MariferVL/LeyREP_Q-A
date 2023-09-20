@@ -1,5 +1,4 @@
-// const form = document.querySelector("form");
-// const responseEl = document.getElementById("response");
+
 const chatMessages = document.getElementById('chat-messages');
 const userInput = document.getElementById('user-input');
 const sendButton = document.getElementById('send-button');
