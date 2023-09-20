@@ -5,10 +5,28 @@ export const createPrediction = async (req, res) => {
   try {
     const flowiseData = {
       question: message,
+
+      "history": [
+        {
+
+          "type": "apiMessage",
+          "message": "¡Hola!¿En qué te puedo ayudar? "
+        },
+        {
+
+          "type": "userMessage",
+          "message": "Hola soy Marifer"
+        },
+        {
+          "type": "apiMessage",
+          "message": "Hola Marifer, yo soy Verdia. ¿cómo estas? ¿En qué te puedo ayudar?"
+        }
+      ]
+
     };
 
     const response = await fetch(`${process.env.FLOWISE_HOST}/api/v1/prediction/${process.env.CHATFLOW_ID}`,
-    {
+      {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

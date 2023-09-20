@@ -4,36 +4,43 @@ const userInput = document.getElementById('user-input');
 const sendButton = document.getElementById('send-button');
 
 function addUserMessage(message) {
-    const messageDiv = document.createElement('div');
-    messageDiv.classList.add('message', 'user-message');
-    messageDiv.textContent = message;
-    chatMessages.appendChild(messageDiv);
+  const messageDiv = document.createElement('div');
+  messageDiv.classList.add('message', 'user-message');
+  messageDiv.textContent = message;
+  chatMessages.appendChild(messageDiv);
 }
 
 function addBotMessage(message) {
-    const messageDiv = document.createElement('div');
-    messageDiv.classList.add('message', 'bot-message');
-    messageDiv.textContent = message;
-    chatMessages.appendChild(messageDiv);
+  const messageDiv = document.createElement('div');
+  messageDiv.classList.add('message', 'bot-message');
+  messageDiv.textContent = message;
+  chatMessages.appendChild(messageDiv);
 }
 
+function scrollToBottom() {
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+
+/* Messages Flow */
 
 const chatContainer = document.getElementById('chat-container');
 const chatButton = document.getElementById('chat-button');
 const webContainer = document.getElementById('web-container');
 
 chatButton.addEventListener('click', () => {
-    if (chatContainer.style.display === 'none') {
-        chatContainer.style.display = 'block';
-        chatButton.innerHTML = '<i class="fas fa-times"></i>';
-        webContainer.classList.add('blur');
+  if (chatContainer.style.display === 'none') {
+    chatContainer.style.display = 'block';
+    chatButton.innerHTML = '<i class="fas fa-times"></i>';
+    webContainer.classList.add('blur');
+    addBotMessage("Hola, buen día🌻Soy Verdia. ¿En qué te puedo ayudar?");
 
-    } else {
-        chatContainer.style.display = 'none';
-        chatButton.innerHTML = '<i class="fas fa-comment"></i>';
-        webContainer.classList.remove('blur');
-        
-    }
+  } else {
+    chatContainer.style.display = 'none';
+    chatButton.innerHTML = '<i class="fas fa-comment"></i>';
+    webContainer.classList.remove('blur');
+
+  }
 });
 
 
@@ -47,9 +54,9 @@ sendButton.addEventListener("click", async (e) => {
 
   const userMessage = userInput.value;
   if (userMessage.trim() !== '') {
-      addUserMessage(userMessage);
+    addUserMessage(userMessage);
+    scrollToBottom();
 
-      userInput.value = '';
   }
 
   try {
@@ -64,8 +71,10 @@ sendButton.addEventListener("click", async (e) => {
     const data = await res.json();
 
     addBotMessage(data.message);
+    scrollToBottom();
   } catch (error) {
     addBotMessage(error.message);
+    scrollToBottom();
   } finally {
     sendButton.disabled = false;
     sendButton.innerHTML = "Enviar";
