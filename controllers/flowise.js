@@ -1,4 +1,4 @@
-export const createPrediction = async (req, res) => {
+module.exports.createPrediction = async (req, res) => {
   const { message } = req.body;
   console.log(message);
 

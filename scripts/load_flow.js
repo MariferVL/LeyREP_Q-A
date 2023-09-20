@@ -1,6 +1,5 @@
-import axios from 'axios';
-import chatFlow from '../test/flow.json' assert { type: 'json' };
-
+const axios = require('axios');
+const chatFlow = require('../test/flow.json');
 
 const PORT = process.env.PORT;
 const openAIApiKey = process.env.OPENAI_API_KEY;

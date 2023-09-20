@@ -1,8 +1,9 @@
-import express from 'express';
-import path from 'path';
-import bodyParser from 'body-parser';
-import dotenv from 'dotenv';
-import {createPrediction} from './controllers/flowise.js';
+const express = require('express');
+const path = require('path');
+const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+const { createPrediction } = require('./controllers/flowise.js');
+
 
 dotenv.config();
 
