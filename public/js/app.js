@@ -1,3 +1,4 @@
+/* Verdia Messages Flow */
 
 const chatMessages = document.getElementById('chat-messages');
 const userInput = document.getElementById('user-input');
@@ -20,29 +21,6 @@ function addBotMessage(message) {
 function scrollToBottom() {
   chatMessages.scrollTop = chatMessages.scrollHeight;
 }
-
-
-/* Messages Flow */
-
-const chatContainer = document.getElementById('chat-container');
-const chatButton = document.getElementById('chat-button');
-const webContainer = document.getElementById('web-container');
-
-chatButton.addEventListener('click', () => {
-  if (chatContainer.style.display === 'none') {
-    chatContainer.style.display = 'block';
-    chatButton.innerHTML = '<i class="fas fa-times"></i>';
-    webContainer.classList.add('blur');
-    addBotMessage("Hola, buen día🌻Soy Verdia. ¿En qué te puedo ayudar?");
-
-  } else {
-    chatContainer.style.display = 'none';
-    chatButton.innerHTML = '<i class="fas fa-comment"></i>';
-    webContainer.classList.remove('blur');
-
-  }
-});
-
 
 sendButton.addEventListener("click", async (e) => {
   e.preventDefault();
@@ -82,4 +60,25 @@ sendButton.addEventListener("click", async (e) => {
   }
 });
 
+
+/* Open/Close Verdia */
+
+const chatContainer = document.getElementById('chat-container');
+const chatButton = document.getElementById('chat-button');
+const webContainer = document.getElementById('web-container');
+
+chatButton.addEventListener('click', () => {
+  if (chatContainer.style.display === 'none') {
+    chatContainer.style.display = 'block';
+    chatButton.innerHTML = '<i class="fas fa-times"></i>';
+    webContainer.classList.add('blur');
+    addBotMessage("Hola, buen día🌻Soy Verdia. ¿En qué te puedo ayudar?");
+
+  } else {
+    chatContainer.style.display = 'none';
+    chatButton.innerHTML = '<i class="fas fa-comment"></i>';
+    webContainer.classList.remove('blur');
+
+  }
+});
 
