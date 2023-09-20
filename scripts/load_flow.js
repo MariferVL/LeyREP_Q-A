@@ -1,5 +1,6 @@
-import { post } from 'axios';
-import chatFlow, { nodes as _nodes } from '../test/flow.json';
+import axios from 'axios';
+import chatFlow from '../test/flow.json' assert { type: 'json' };
+
 
 const PORT = process.env.PORT;
 const openAIApiKey = process.env.OPENAI_API_KEY;
@@ -11,12 +12,12 @@ const createCredential = async (name, apiKey) => {
     credentialName: 'openAIApi',
     plainDataObj: { openAIApiKey: apiKey },
   };
-  const { data } = await post(`${baseUrl}/credentials`, payload);
+  const { data } = await axios.post(`${baseUrl}/credentials`, payload);
   return data.id;
 };
 
 const createFlow = async (name, credentialId) => {
-  const nodes = _nodes.map((node) => {
+  const nodes = chatFlow.nodes.map((node) => {
     if (node.data.type === 'ChatOpenAI') {
       node.data.credential = credentialId;
     }
@@ -32,7 +33,7 @@ const createFlow = async (name, credentialId) => {
     name,
   };
 
-  const { data } = await post(`${baseUrl}/chatflows`, payload);
+  const { data } = await axios.post(`${baseUrl}/chatflows`, payload);
   return data.id;
 };
 

@@ -252,12 +252,14 @@ section {
     background-color: #76a70ddb;
     align-self: flex-end;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 .bot-message {
     background-color: #f7f8ff;
     color: #4f7106;
     font-family: 'Nunito Sans', sans-serif;
+    text-align: left;
 }
 
 #input-container {
