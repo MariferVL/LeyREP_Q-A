@@ -6,7 +6,7 @@ module.exports.createPrediction = async (req, res) => {
     const flowiseData = {
       question: message};
 
-    const response = await fetch(`${process.env.FLOWISE_HOST}/api/v1/prediction/${process.env.CHATFLOW_ID}`,
+    const response = await fetch(`${process.env.FLOW_HOST}/api/v1/prediction/${process.env.FLOW_ID}`,
       {
         method: "POST",
         headers: {
